@@ -12,6 +12,8 @@ public class Pagecontroller {
     @RequestMapping("/home")
     public String home(Model model) {
         System.out.println("home page handler");
+        
+        //sending data to view
         model.addAttribute("name", "Spring Boot");
         model.addAttribute("creator", "Rohit");
         model.addAttribute("githubRepo", "https://github.com/Royalaviation18/Smart-Contact-Manager");
