@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            margin: 0 auto;
+            width: 50%;
+            padding: 30px;
+            background: #e2e2e2;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 data-th-text="${name}">Welcome to home page</h1>
+        <p>Owner: <span data-th-text="${creator}"></span></p>
+        <p>Github Repo: <span data-th-text="${githubRepo}"></span></p>
+        <a data-th-href="${githubRepo}">Click here to open></a>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum eius saepe corrupti illo suscipit?
+            Voluptatibus exercitationem fuga praesentium atque! Atque dolorum necessitatibus rerum ab, alias doloremque.
+            A maxime beatae dolorum. Optio, quisquam! Dolore sunt reprehenderit voluptas tempore mollitia alias! Fugit
+            nostrum recusandae maxime natus corporis consequuntur aspernatur reprehenderit voluptatem consequatur?</p>
+    </div>
+</body>
+
+</html>
