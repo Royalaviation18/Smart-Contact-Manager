@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .container{
-            margin: 0 auto;
-            width: 50%;
-            padding: 30px;
-            background: #e2e2e2;
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" data-th-href="@{'/css/output.css'}" />
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
 </head>
 
 <body>
-    <div class="container">
-        <h1 data-th-text="${name}">Welcome to home page</h1>
-        <p>Owner: <span data-th-text="${creator}"></span></p>
+    <div class="bg-gray-200 w-1/2 p-4 flex flex-col items-center space-y-3 mx-auto mt-4">
+        <h1 class="text-2xl font-bol" data-th-text="${name}">Welcome to home page</h1>
+        <p class="text-xl text-gray-700">Owner: <span data-th-text="${creator}"></span></p>
         <p>Github Repo: <span data-th-text="${githubRepo}"></span></p>
         <a data-th-href="${githubRepo}">Click here to open></a>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum eius saepe corrupti illo suscipit?
+        <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum eius saepe
+            corrupti illo suscipit?
             Voluptatibus exercitationem fuga praesentium atque! Atque dolorum necessitatibus rerum ab, alias doloremque.
             A maxime beatae dolorum. Optio, quisquam! Dolore sunt reprehenderit voluptas tempore mollitia alias! Fugit
             nostrum recusandae maxime natus corporis consequuntur aspernatur reprehenderit voluptatem consequatur?</p>
+
+        <div>
+            <button class="px-3 py-2 rounded bg-blue-700 text-white hover:bg-blue-600"> Click Here</button>
+        </div>
     </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+
 </body>
 
 </html>
