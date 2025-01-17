@@ -15,6 +15,8 @@ public class Pagecontroller {
         model.addAttribute("name", "Spring Boot");
         model.addAttribute("creator", "Rohit");
         model.addAttribute("githubRepo", "https://github.com/Royalaviation18/Smart-Contact-Manager");
+
+        //return the name which is mapped to the view (home.html)
         return "home";
     }
 }
